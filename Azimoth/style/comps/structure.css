@@ -1,0 +1,29 @@
+/*CUSTOM VALUES*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+html *,
+html *::after,
+html *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html .lg-index {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header" "container";
+}
+html .lg-index__header {
+  grid-area: header;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #D7D7D7;
+}
+html .lg-index__container {
+  grid-area: container;
+  width: 100%;
+  height: calc(100vh - 60px);
+}/*# sourceMappingURL=structure.css.map */

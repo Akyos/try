@@ -1,0 +1,173 @@
+@import "../comps/structure.scss";
+
+
+
+/*-------------MOBILE FIRST--------------*/
+/*WHOLE BODY CONTAINER*/
+.container-box{
+    //background-color: yellow;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__card{
+        width: 80%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //background-color: gray;
+    }
+}
+/*LEFT SIDE - FIGURE [HIDE CUZ ITS MOBILE VIEW]*/
+.card-left{
+    display: none;
+}
+.card-rigth{
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    min-height: 600px;
+    //background-color: red;
+    border: 2px solid $extrawhite-gray;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__head,
+    &__body,
+    &__footer{
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        //background-color: yellow;
+    }
+    &__body{
+        //background-color: yellow;
+        flex-direction: column;
+    }
+}
+/*INPUTS FEATURES*/
+.body-inputs{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+.inputs-group{
+    //background-color: #F4893C;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1px;
+    border: 1px solid #D7D7D7;
+    margin-bottom: 8px;
+    &:hover{
+        outline: 2px solid #F4893C;
+    }
+    &__icon{
+        height: 95%;
+        display: flex;
+        align-items: center;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+    }
+    &__input{
+        width: 95%;
+        height: 95%;
+        border: none;
+        border-left: 1px solid #D7D7D7;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-left:16px ;
+        &:active,
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            line-height: 18px;
+            font-size: 14px;
+        }
+        &--selection{
+            border: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+
+    }
+}
+/*BUTTON FEATURES*/
+.btn-default{
+    border:none;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: #F4893C;
+    margin-top: 24px;
+    cursor: pointer;
+    color: #FFF;
+    &:hover{
+        background-color: #FF5C16;
+    }
+    
+
+}
+/*TEXT INSIDE INPUTS BODY []*/
+.body-letter{
+    width: 100%;
+    height: auto;
+    &__text{
+        font-weight: 300;
+        line-height: 15px;
+        font-size: 14px;
+        &--link{
+            color: $black-letter;
+        }
+    }
+}
+/*FIRST TITLE ABOUT CARD*/
+.head-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    //background-color: rgb(112, 168, 112);
+    &__letterhead{
+        font-weight: 500;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    &__subletterhead{
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 16px;
+    }
+}
+/*FOOTER FEATURES*/
+.footer-title{
+    width: 100%;
+    //background-color: lightcoral;
+    text-align: center;
+    &__letter{
+        font-weight: 300;
+        line-height: 18px;
+        font-size: 16px;
+    }
+    &__link{
+        color: $black-letter;
+    }
+}
+
+
+
+/*-------------DESKTOP VIEW---------------*/
